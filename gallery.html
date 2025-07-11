@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Moi University Main Altar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .gallery h2 {
+      text-align: center;
+      color: #001F54;
+      margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid a img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid a:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Moi University Main Altar</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sermons.html">Sermons</a></li>
+        <li><a href="weekly-program.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="giving.html">Giving</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+      <a href="images/service1.jpg" target="_blank">
+        <img src="images/service1.jpg" alt="Sunday Service">
+      </a>
+      <a href="images/worship1.jpg" target="_blank">
+        <img src="images/worship1.jpg" alt="Worship Moment">
+      </a>
+      <a href="images/altar_group.jpg" target="_blank">
+        <img src="images/altar_group.jpg" alt="Altar Group">
+      </a>
+      <a href="images/outreach.jpg" target="_blank">
+        <img src="images/outreach.jpg" alt="Outreach Mission">
+      </a>
+      <a href="images/prayer.jpg" target="_blank">
+        <img src="images/prayer.jpg" alt="Prayer Session">
+      </a>
+      <a href="images/bible_study.jpg" target="_blank">
+        <img src="images/bible_study.jpg" alt="Bible Study">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Moi University Main Altar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
